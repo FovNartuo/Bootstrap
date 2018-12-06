@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表样式</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- ul,ol变化不大,只修改了margin值 -->
+    <ul>
+        <li>你瞅啥</li>
+        <li>瞅你咋地</li>
+    </ul>   <!-- 底部有个20px的边距,顶部么有 -->
+    <ol>
+        <li>你瞅啥</li>
+        <li>瞅你咋地</li>
+    </ol>
+    <hr>
+    <!-- 嵌套的ul,ol会发现没有了margin值 -->
+    <ul>
+        <li>窗前明月光</li>
+        <li>
+            <ul>
+                <li>疑是地上霜</li>
+                <li>
+                    <ol>
+                        <li>举头望明月</li>
+                        <li>低头思故乡</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <!-- 清除默认样式,不仅仅是list-style,还padding-left: 0 -->
+    <ol>
+        <li>有序项目列表一</li>
+        <li>有序项目列表二
+            <ol class="list-unstyled">
+                <li>有序项目列表一</li>
+                <li>有序项目列表二
+                    <ul>
+                        <li>无序项目列表一</li>
+                        <li>无序项目列表二
+                            <ul class="list-unstyled">
+                                <li>无序项目列表一</li>
+                                <li>无序项目列表二</li>
+                            </ul>
+                        </li>
+                        <li>无序项目列表三</li>
+                    </ul>
+                </li>
+                <li>有序项目列表三</li>
+            </ol>
+        </li>
+        <li>有序项目列表三</li>
+    </ol>
+    <hr>
+    <!-- 内联列表,把垂直列表换成水平列表,而且去掉项目符号（编号）,保持水平显示,为制作水平导航而生。 -->
+    <ul class="list-inline">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScirpt</li>
+        <li>Vue.js</li>
+        <li>node.js</li>
+    </ul>
+    <hr>
+    <!-- 定义列表,没有做什么修改,dl(底部边距20px),dt(加粗),dd(去除左边距) -->
+    <dl>
+        <dt>雨果</dt>
+        <dd>让自己的内心藏着一条巨龙，既是一种苦刑，也是一种乐趣。</dd>
+        <dt>苏轼</dt>
+        <dd>古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。</dd>
+    </dl>
+    <hr>
+    <!-- 水平定义列表 
+        源码中添加了一个媒体查询。也就是说，只有屏幕大于768px的时候，添加类名“.dl-horizontal”才具有水平定义列表效果。其实现主要方式：
+            1、将dt设置了一个左浮动，并且设置了一个宽度为160px
+            2、将dd设置一个margin-left的值为180px，达到水平的效果
+            3、当标题宽度超过160px时，将会显示三个省略号
+    -->
+    <dl class="dl-horizontal">
+        <dt>卢梭</dt>
+        <dd>当我们只遇到逆风行舟的时候，我们调整航向迂回行驶就可以了;但是，当海面上波涛汹涌，而我们想停在原地的时候，那就要抛锚。当心啊，年轻的舵手，别让你的缆绳松了，别让你的船锚动摇，不要在你没有发觉以前，船就漂走了。</dd>
+        <dt>诸葛亮</dt>
+        <dd>夫学须志也，才须学也，非学无以广才，非志无以成学。</dd>
+        <dt>秋瑾说：“水激石则鸣，人激志则宏”</dt>
+        <dd>水激石则鸣，人激志则宏。</dd>
+    </dl>
+    
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
