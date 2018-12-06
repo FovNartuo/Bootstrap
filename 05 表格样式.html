@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格样式</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+        <!-- 不同的样式风格提供了不同的类名，主要包括：
+            .table：基础表格
+            .table-striped：斑马线表格
+            .table-bordered：带边框的表格 
+            .table-hover：鼠标悬停高亮的表格 
+            .table-condensed：紧凑型表格
+            .table-responsive：响应式表格 -->
+
+
+    <!-- tr,不同类名不同颜色 -->
+    <table class="table table-bordered">
+        <thead>
+            <tr><th>不同类名不同颜色</th></tr>
+        </thead>
+        <tbody>
+            <tr class="active"><td>表示当前活动信息</td></tr>
+            <tr class="success"><td>表示成功会正确的行为</td></tr>
+            <tr class="info"><td>表示中立的信息或行为</td></tr>
+            <tr class="warning"><td>表示警告,需要特别注意</td></tr>
+            <tr class="danger"><td>表示危险,可能犯错的行为</td></tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- 鼠标悬浮高亮的表格 -->
+    <table class="table table-hover">
+        <caption>鼠标悬浮高亮的表格</caption>
+        <thead>
+            <tr><th>不同类名不同颜色</th></tr>
+        </thead>
+        <tbody>
+            <tr class="active"><td>表示当前活动信息</td></tr>
+            <tr class="success"><td>表示成功会正确的行为</td></tr>
+            <tr class="info"><td>表示中立的信息或行为</td></tr>
+            <tr class="warning"><td>表示警告,需要特别注意</td></tr>
+            <tr class="danger"><td>表示危险,可能犯错的行为</td></tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- 基础表格
+        给表格设置了margin-bottom:20px以及设置单元内距
+        在thead底部设置了一个2px的浅灰实线
+        每个单元格顶部设置了一个1px的浅灰实线
+    -->
+    <table class="table">
+        <caption>基础表格</caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tony</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Tom</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- 斑马线表格 -->
+    <table class="table table-striped">
+        <caption>斑马线表格</caption>
+        <thead>
+            <tr>
+                <th><span class="glyphicon glyphicon-user"></span></th>
+                <th>age</th>
+                <th>sex</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tony</td>
+                <td>18</td>
+                <td>boy</td>
+            </tr>
+            <tr>
+                <td>Tom</td>
+                <td>20</td>
+                <td>boy</td>
+            </tr>
+            <tr>
+                <td>sali</td>
+                <td>16</td>
+                <td>girl</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- 带1px边框的表格 -->
+    <table class="table table-bordered">
+        <caption>边框表格</caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tony</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Tom</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- 紧凑型表格,这与基础表格差别不大，因为只是将单元格的内距由8px调至5px -->
+    <table class="table table-condensed">
+        <caption>紧凑型表格</caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tony</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Tom</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- 响应式表格  -->
+    <table class="table table-responsive">
+        <caption>响应式表格</caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tony</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Tom</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

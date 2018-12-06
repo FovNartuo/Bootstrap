@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单控件</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <form role="form">
+        <div class="form-group">
+
+            <!-- 输入框 -->
+            <input type="email" class="form-control" placeholder="Enter email">
+
+            <!-- 下拉选择框 -->
+            <select class="form-control" style="width: 333px;">     <!--多行选择 增加一个属性multiple-->
+                <option>《奖励的恶果》--艾尔菲·科恩</option>
+                <option>《全新思维：决胜未来的6大能力》--丹尼尔·平克</option>
+                <option>《稀缺》--穆来纳森/沙菲尔</option>
+                <option>《思想本质》--斯蒂芬·平克</option>
+                <option>《健全的社会》--艾里希·弗洛姆</option>
+            </select>
+
+            <!-- 文本域, “form-control”样式的表单控件宽度为100%或auto -->
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+
+        <!-- 复选框/单选按钮,它们与label标签配合使用时会有无法对齐的问题
+            bootstrap中:
+                不管是checkbox还是radio都使用label单独包起来了
+                checkbox连同label标签放置在一个名为“.checkbox”的容器内
+                radio连同label标签放置在一个名为“.radio”的容器内-->
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="forget">
+                忘记烦恼
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" value="love" checked>
+                喜欢
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" value="hate">
+                不喜欢
+            </label>
+        </div>
+        <hr>
+        <!-- 复选框/单选按钮水平排列
+            如果checkbox需要水平排列，只需要在label标签上添加类名“checkbox-inline”
+            如果radio需要水平排列，只需要在label标签上添加类名“radio-inline” -->
+            <div class="form-group">
+                <label class="checkbox-inline">
+                    <input type="checkbox"  value="option1">vue
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"  value="option2">angualr
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"  value="option3">react
+                </label>
+            </div>
+            <div class="form-group">
+                <label class="radio-inline">
+                    <input type="radio"  value="option1" name="sex">男性
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="option2" name="sex">女性
+                </label>
+                <label class="radio-inline">
+                    <input type="radio"  value="option3" name="sex">其他
+                </label>
+            </div>
+    </form>
+
+    <!-- 按钮组件 -->
+    <input type="button" value="按钮" class="btn btn-default">
+    <!-- input type="button"和button的区别,在于button元素更强大,它的文本区域可以插入其他元素都显示为按钮 -->
+    <button type="button" class="btn btn-default">按钮</button>     <!-- 默认按钮 -->
+    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-download"></span></button>   <!--很机智-->
+    
+    <!-- bootstrap提供的6种按钮样式 -->
+    <button type="button" class="btn btn-primary">首选项</button>
+    <button type="button" class="btn btn-success">成功</button>
+    <button type="button" class="btn btn-info">一般信息</button>
+    <button type="button" class="btn btn-warning">警告</button>
+    <button type="button" class="btn btn-danger">危险</button>
+    <button type="button" class="btn btn-link">链接</button>
+    
+    <!-- 修改button尺寸样式 -->
+    <!-- btn-lg:large 大-->
+    <button type="button" class="btn btn-danger btn-lg">危险</button>
+    <!-- btn-sm:small 中-->
+    <button type="button" class="btn btn-info btn-sm">person information</button>
+    <!-- bnt-xs:更小号 小-->
+    <button type="button" class="btn btn-warning btn-xs">warning</button>
+    
+    <!-- 将a标签渲染成按钮,角色是按钮 -->
+    <a href="#" class="btn btn-default" role="button">a标签也是也是个按钮咯</a>
+    
+    <!-- 焦点状态 -->
+    <form role="form" class="form-horizontal">
+        <div class="form-group">
+            <div class="col-xs-4">
+                <input class="form-control input-lg" type="text" placeholder="不是焦点状态下效果">
+            </div>
+            <div class="col-xs-4">
+                <input class="form-control input-lg" type="text" placeholder="焦点点状态下效果">
+            </div>
+            <div class="col-xs-4">
+                <input class="form-control input-lg" type="text" placeholder="禁用状态下效果" disabled>
+            </div>
+        </div>
+    </form>
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
