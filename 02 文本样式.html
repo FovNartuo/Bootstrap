@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文本样式</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 全局的文本样式 -->
+    <p>全局文本字号为14px(font-size)；<br>
+        行高为1.42857143（line-height），大约是20px；<br>
+        颜色为深灰色（#333）；<br>
+        字体为"Helvetica Neue", Helvetica, Arial, sans-serif；<br>
+        默认情况之下，p元素具有一个上下外边距，并且保持一个行高的高度（p元素的margin值）。
+    </p>
+    <hr>
+    <!-- 强调内容 -->
+    <p class="lead">强调的段落内容会增大文本字号(16px)，加粗文本(200)，而且对行高(1.4)和margin(底部20px)也做相应的处理</p>
+    <p>对部分内容<strong>加粗(bold)</strong>处理</p>
+    <p>对部分内容<b>加粗(bold)</b>处理</p>
+    <p>对部分内容<small>缩小</small>处理</p>
+    <p>对部分内容<cite>斜体</cite>处理</p>
+    <p>对部分内容<em>斜体</em>处理</p>
+    <p>对部分内容<i>斜体</i>处理</p>
+    <hr>
+    <!-- 类名强调文本内容,颜色区分 
+        .text-muted：提示，使用浅灰色（#999）
+        .text-primary：主要，使用蓝色（#428bca）
+        .text-success：成功，使用浅绿色(#3c763d)
+        .text-info：通知信息，使用浅蓝色（#31708f）
+        .text-warning：警告，使用黄色（#8a6d3b）
+        .text-danger：危险，使用褐色（#a94442）
+    -->
+    <p class="text-muted">你该学习了</p>
+    <p class="text-primary">你的主要任务就是学习</p>
+    <p class="text-success">你学的很棒</p>
+    <p class="text-info">08:00-23:00为学习时间</p>
+    <p class="text-warning">再不学习你就惨了</p>
+    <p class="text-danger">you are so bad</p>
+    <hr>
+    <!-- 文本对齐方式 -->
+    <p class="text-left">我居左</p>
+    <p class="text-center">我居中</p>
+    <p class="text-right">我居右</p>
+    <p class="text-justify">我两端对齐(有问题的,慎用)</p>
+
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
