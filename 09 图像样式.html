@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>model</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 图像的样式风格:
+    1、img-responsive：响应式图片，主要针对于响应式设计
+    2、img-rounded：圆角图片
+    3、img-circle：圆形图片
+    4、img-thumbnail：缩略图片 -->
+
+    <div style="height:150px;width:150px;">
+        <img class="img-responsive" src="SpongeBobSquarePants.png" alt="海绵宝宝">
+    </div>
+    <div style="height:150px;">
+        <img class="img-rounded" src="SpongeBobSquarePants.png" alt="海绵宝宝">
+    </div>
+    <div style="width:150px;">
+        <img class="img-circle" src="SpongeBobSquarePants.png" alt="海绵宝宝">
+    </div>
+    <div>
+        <img class="img-thumbnail" src="SpongeBobSquarePants.png" alt="海绵宝宝">
+    </div>
+
+<!-- 设置图片大小：
+由于样式没有对图片做大小上的样式限制，所以在实际使用的时候，需要通过其他的方式来处理图片大小。比如说控制图片容器大小。（注意不可以通过css样式直接修改img图片的大小，这样操作就不响应了） -->
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

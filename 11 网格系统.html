@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>栅格系统</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+        <!-- 实现原理
+        通过定义容器大小，平分12份(也有平分成24份或32份，但12份是最常见的)，
+        再调整内外边距，最后结合媒体查询，就制作出了强大的响应式网格系统。
+        Bootstrap框架中的网格系统就是将容器平分成12份 -->
+        
+        <!-- 外面需要一个大容器 -->
+        <div class="container">
+            <!-- 定义每一行 -->
+            <div class="row">
+                <!-- 每行中分col列 -->
+                <!-- 列偏移 -->
+                <div class="col-md-2">占据2格</div>
+                <div class="col-md-4 col-md-offset-6">占据4格,还往右偏移了6格</div>
+            </div>
+            <!-- 列组合,列数之和为12 -->
+            <div class="row">
+                <div class="col-md-2">占据2格</div>
+                <div class="col-md-4">占据4格</div>
+                <div class="col-md-3">占据3格</div>
+                <div class="col-md-3">占据3格</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+                <div class="col-md-1">占据1格</div>
+            </div>
+            <hr>
+            <!-- 列排序
+                左右颠倒, 左->右是push, 右->左是pull
+            -->
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">左左左左</div>
+                <div class="col-md-8 col-md-pull-4">右右右右右右右右</div>
+            </div>
+            <hr>
+
+            <!-- 列的嵌套
+                需要嵌套的一行又变成了全新的一行,在这一行上分成12格进行分格
+            -->
+            <div class="row">
+                <div class="col-md-8">
+                占据了8格的一级列,里面有两个二级列
+                    <div class="row">
+                        <div class="col-md-6">占据了6格的二级列</div>
+                        <div class="col-md-6">占据了6格的二级列</div>
+                    </div>
+                </div>
+                <div class="col-md-4">占据了4格的一级列</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">占据了4格的一级列</div>
+                <div class="col-md-8">
+                    占据了8格的一级列,里面有3个二级列
+                    <div class="row">
+                        <div class="col-md-4">占据了4格的二级列</div>
+                        <div class="col-md-4">占据了4格的二级列</div>
+                        <div class="col-md-4">
+                            占据了4格的二级列
+                            <div class="row">
+                                <div class="col-md-6">6格的三级列</div>
+                                <div class="col-md-6">6格的三级列</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

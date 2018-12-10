@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航条样式</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        /* hot标签样式 */
+        .myLabel{
+            position: absolute;
+            top: -2px;
+            left: 42px;
+        }
+        .samllTriangle{
+            border-top: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 6px solid #d9534f;
+            position: absolute;
+            top: 5px;
+            left: 42px;
+        }
+        /* 徽章 */
+        .myBadge{
+            position: absolute;
+            top: 6px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航条和导航不一样，一字之差差之千里。
+    在导航条(navbar)中有一个背景色、而且导航条可以是纯链接（类似导航），也可以是表单，还有就是表单和导航一起结合等多种形式。 -->
+
+        <!-- 基础导航条  navbar-default -->
+        <!-- 反色导航条   navbar-inverse -->
+        <!-- 第一步:在列表外部添加一个容器（div），并且使用类名“navbar”和“navbar-*** -->
+        <div class="navbar navbar-inverse">
+            <!-- 导航条标题 -->
+            <div class="navbar-header">
+                <a href="##" class="navbar-brand">民生新闻-老百姓身边的新闻</a>
+            </div>
+            <!-- 第二步：在制作导航的列表(<ul class=”nav”>)基础上添加类名“navbar-nav” -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="##">首页</a></li>
+                <!-- 增加标签 -->
+                <li style="position: relative;">
+                    <a href="##">热点</a>
+                    <span class="label label-danger myLabel">hot</span>
+                    <div class="samllTriangle"></div>
+                </li>
+                <li><a href="##">娱乐</a></li>
+                <!-- 二级菜单 -->
+                <li>
+                    <a href="##" class="dropdown-toggle" data-toggle="dropdown">
+                        体育
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">羽毛球</a></li>
+                        <li><a href="#">足球</a></li>
+                        <li class="disabled"><a href="#">篮球</a></li>
+                    </ul>
+                </li>
+                <li><a href="##">社会</a></li>
+                <!-- 徽章 -->
+                <li style="position: relative;">
+                    <a href="##">
+                    通知
+                    <span class="badge myBadge">16</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- 搜索表单 -->
+            <form action="##" class="navbar-form navbar-left" rol="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="请输入关键词" />
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div>
+        <hr>
+        <!-- 导航条中的文本navbar-text -->
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="##" class="navbar-text">首页</a></li>
+            <li><a href="##" class="navbar-text">娱乐</a></li>
+            <li><a href="##" class="navbar-text">热点</a></li>
+            <li><a href="##" class="navbar-text">体育</a></li>
+            <li><a href="##" class="navbar-text">社会</a></li>
+        </ul>
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

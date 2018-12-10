@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>警示框</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 在网站中，网页总是需要和用户一起做沟通与交流。
+    特别是当用户操作上下文为用户提供一些有效的警示框，比如说告诉用户操作成功、操作错误、提示或者警告等。 -->
+    
+    <!-- 默认警示框 -->
+    <!-- 成功警示框：告诉用用户操作成功，在“alert”样式基础上追加“alert-success”样式，具体呈现的是背景、边框和文本都是绿色 -->
+    <div class="alert alert-success" role="alert">恭喜您操作成功！</div>
+    <!-- 信息警示框：给用户提供提示信息，在“alert”样式基础上追加“alert-info”样式，具体呈现的是背景、边框和文本都是浅蓝色 -->
+    <div class="alert alert-info" role="alert">请输入正确的密码</div>
+    <!-- 警告警示框：提示用户小心操作（提供警告信息），在“alert”样式基础上追加“alert-warning”样式，具体呈现的是背景、边框、文本都是浅黄色 -->
+    <div class="alert alert-warning" role="alert">您已操作失败两次，还有最后一次机会</div>
+    <!-- 错误警示框：提示用户操作错误，在“alert”样式基础上追加“alert-danger”样式，具体呈现的是背景、边框和文本都是浅红色 -->
+    <div class="alert alert-danger" role="alert">对不起，您输入的密码有误</div>
+    <hr>
+
+    <!-- 可关闭的警示框 -->
+    <!-- 需要在基本警示框“alert”的基础上添加“alert-dismissable”样式。 -->
+    <div class="alert alert-success alert-dismissable" role="alert">
+        <!-- 在button标签中加入class="close"类，实现警示框关闭按钮的样式。
+        要确保关闭按钮元素上设置了自定义属性：“data-dismiss="alert"”（因为可关闭警示框需要借助于Javascript来检测该属性，从而控制警示框的关闭）。 -->
+        <button class="close" type="button" data-dismiss="alert">&times;</button>
+        恭喜您操作成功！
+    </div>
+    <hr>
+
+    <!-- 警示框的链接 -->
+    <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> 
+        You successfully read 
+        <a href="#" class="alert-link">this important alert message</a>
+        .
+    </div>
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

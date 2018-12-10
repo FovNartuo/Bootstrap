@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>model</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 标签形tab导航 -->
+    <ul class="nav nav-tabs">
+        <li><a href="##">HTML5</a></li>
+        <li><a href="##">CSS3</a></li>
+        <!-- 禁用效果 -->
+        <li class="disabled"><a href="##">Sass</a></li>
+        <li><a href="##">jQuery</a></li>
+        <li><a href="##">JavaScript</a></li>
+    </ul>
+    <hr>
+    <!-- 胶囊形(pills)导航 -->
+    <ul class="nav nav-pills">
+        <li><a href="##">HTML5</a></li>
+        <li><a href="##">CSS3</a></li>
+        <li><a href="##">Sass</a></li>
+        <li><a href="##">jQuery</a></li>
+        <li><a href="##">JavaScript</a></li>
+    </ul>
+    <hr>
+    <!-- 垂直堆叠的导航 -->
+    <ul class="nav nav-stacked">
+        <!-- 当前状态 -->
+        <li class="active"><a href="##">HTML5</a></li>
+        <li><a href="##">CSS3</a></li>
+        <!-- 禁用效果 -->
+        <li class="disabled"><a href="##">Sass</a></li>
+        <li><a href="##">jQuery</a></li>
+        <!-- 分割线 -->
+        <li class="nav-divider"></li>
+        <li><a href="##">JavaScript</a></li>
+    </ul>
+    <hr>
+    <!-- 自适应导航,实现原理:给每一个li元素设置display:table-cell -->
+    <ul class="nav nav-pills nav-justified">
+        <li><a href="##">HTML5</a></li>
+        <li><a href="##">CSS3</a></li>
+        <li><a href="##">Sass</a></li>
+        <li><a href="##">jQuery</a></li>
+        <li><a href="##">JavaScript</a></li>
+    </ul>
+    <hr>
+    <!-- 导航加下拉菜单
+        将li当作父容器，使用类名“dropdown”，同时在li中嵌套另一个列表ul-->
+    <ul class="nav nav-pills">
+        <li class="active"><a href="##">首页</a></li>
+        <li><a href="##">新闻</a></li>
+        <!-- 下拉项 -->
+        <li class="dropdown">
+            <a href="##" class="dropdown-toggle" data-toggle="dropdown">
+                体育
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="##">羽毛球</a></li>
+                <li><a href="##">乒乓球</a></li>
+                <li class="divider"></li>
+                <li><a href="##">足球</a></li>
+                <li><a href="##">篮球</a></li>
+            </ul>
+        </li>
+
+        <li><a href="##">社会</a></li>
+    </ul>
+    <hr>
+    <!-- 面包屑Breadcrumb式导航 -->
+    <ol class="breadcrumb">
+        <li><a href="#">体育</a></li>
+        <li><a href="#">羽毛球</a></li>
+        <li class="active"><a href="#">亚狮龙</a></li>
+    </ol>
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

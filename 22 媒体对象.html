@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>model</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 默认媒体对象 -->
+    <!-- 媒体对象一般是成组出现，而一组媒体对象常常包括以下几个部分: -->
+    <!-- 媒体对像的容器：常使用“media”类名表示，用来容纳媒体对象的所有内容 -->
+    <p class="h2">新浪微博</p>
+    <div class="media">
+        <!-- 媒体对像的对象：常使用“media-object”表示，就是媒体对象中的对象，常常是图片 -->
+        <a class="pull-left" href="#">
+            <img class="media-object" src="SpongeBobSquarePants.png" alt="SpongeBobSquarePants" style="width: 60px;">
+        </a>
+        <!-- 媒体对象的主体：常使用“media-body”表示，就是媒体对像中的主体内容，可以是任何元素，常常是图片侧边内容 -->
+        <div class="media-body">
+            <!-- 媒体对象的标题：常使用“media-heading”表示，就是用来描述对象的一个标题，此部分可选 -->
+            <h4 class="media-heading">吃一勺大白盐</h4>
+            <div>
+                <p>咱老百姓今儿真啊么真高兴<br>
+                    大年三十讲的是辞旧迎新<br>
+                    团圆饭啊七七八八围了一火锅<br>
+                    不知道吃啥喝啥大伤脑筋<br>
+                    咱老百姓今儿真啊么真高兴<br>
+                    千家万户响的是一个声音<br>
+                    电视里的笑星憋足了劲<br>
+                    别管他吹啥捧啥都是逗咱开心</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 媒体对象的嵌套
+        在媒体对象的主体内“media-body”中嵌套-->
+    <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="SpongeBobSquarePants.png" alt="SpongeBobSquarePants" style="width: 60px;">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">fovnartuo</h4>
+                <div>转发:有意思!</div>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="SpongeBobSquarePants.png" alt="SpongeBobSquarePants" style="width: 60px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">吃一勺大白盐</h4>
+                        <div>
+                            <p>咱老百姓今儿真啊么真高兴<br>
+                                大年三十讲的是辞旧迎新<br>
+                                团圆饭啊七七八八围了一火锅<br>
+                                不知道吃啥喝啥大伤脑筋<br>
+                                咱老百姓今儿真啊么真高兴<br>
+                                千家万户响的是一个声音<br>
+                                电视里的笑星憋足了劲<br>
+                                别管他吹啥捧啥都是逗咱开心</p>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="SpongeBobSquarePants.png" alt="SpongeBobSquarePants" style="width: 60px;">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">bertZuo</h4>
+                                <div>评论:你头像和我一样耶!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>按钮</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 按钮组件 -->
+    <input type="button" value="按钮" class="btn btn-default">
+    <!-- input type="button"和button的区别,在于button元素更强大,它的文本区域可以插入其他元素都显示为按钮 -->
+    <button type="button" class="btn btn-default">按钮</button>     <!-- 默认按钮 -->
+    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-download"></span></button>   <!--很机智-->
+    <hr>
+    <!-- bootstrap提供的6种按钮样式 -->
+    <button type="button" class="btn btn-primary">首选项</button>
+    <button type="button" class="btn btn-success">成功</button>
+    <button type="button" class="btn btn-info">一般信息</button>
+    <button type="button" class="btn btn-warning">警告</button>
+    <button type="button" class="btn btn-danger">危险</button>
+    <button type="button" class="btn btn-link">链接</button>
+    <hr>
+    <!-- 修改button尺寸样式 -->
+    <!-- btn-lg:large 大-->
+    <button type="button" class="btn btn-danger btn-lg">危险</button>
+    <!-- btn-sm:small 中-->
+    <button type="button" class="btn btn-info btn-sm">person information</button>
+    <!-- bnt-xs:更小号 小-->
+    <button type="button" class="btn btn-warning btn-xs">warning</button>
+    <hr>
+    <!-- 将a标签渲染成按钮,角色是按钮 -->
+    <a href="#" class="btn btn-default" role="button">a标签也是个按钮咯</a>
+    <hr>
+    <!-- 块级按钮,在移动端需要需要将整个按钮充满整个父容器 -->
+    <button type="button" class="btn btn-danger btn-lg btn-block">危险</button>
+    <button type="button" class="btn btn-info btn-sm btn-block">person information</button>
+    <button type="button" class="btn btn-warning btn-xs btn-block">warning</button>
+    <hr>
+    <!-- 按钮活动状态 -->
+    <button type="button" class="btn btn-danger active">危险</button>
+    <button type="button" class="btn btn-info disabled">person information</button>
+    <button type="button" class="btn btn-warning focus">warning</button>
+    <hr>
+    <!-- 按钮组 -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-step-backward"></span>
+        </button>
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-pause"></span>
+        </button>
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-step-forward"></span>
+        </button>
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-volume-up"></span>
+        </button>
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-circle-arrow-down"></span>
+        </button>
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-fullscreen"></span>
+        </button>
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-star"></span>
+        </button>
+    </div>
+    <hr>
+    <!-- 按钮工具栏,比组还大,其中可以放多个组 -->
+    <div class="btn-toolbar">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-justify"></span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-indent-left"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-indent-right"></span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-font"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-bold"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-italic"></span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-text-height"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-text-width"></span></button>
+        </div>
+    </div>
+    <hr>
+    <!-- 给btn-group增加类名来控制按钮大小   -->
+    <div class="btn-toolbar">
+        <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-justify"></span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-indent-left"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-indent-right"></span></button>
+        </div>
+        <div class="btn-group btn-group-sm">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-font"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-bold"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-italic"></span></button>
+        </div>
+        <div class="btn-group btn-group-xs">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-text-height"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-text-width"></span></button>
+        </div>
+    </div>
+    <hr>
+    <!-- 按钮的嵌套分组,类似导航栏效果(水平展示) -->
+    <div class="btn-group">
+        <button class="btn btn-info" type="button">首页</button>
+        <button class="btn btn-info" type="button">产品展示</button>
+        <button class="btn btn-info" type="button">案例分析</button>
+        <button class="btn btn-info" type="button">联系我们</button>
+        <!-- 按钮下拉菜单 -->
+        <div class="btn-group">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">
+                关于我们
+                <!-- 向下的小三角 -->
+                <span class="caret"></span>
+                <!-- 这个小三角完全由css实现,不得不提一下源码
+                .caret {
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    margin-left: 2px;
+                    vertical-align: middle;
+                    border-top: 4px solid;
+                    border-right: 4px solid transparent;
+                    border-left: 4px solid transparent;
+                  } -->
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="##">公司简介</a></li>
+                <li><a href="##">企业文化</a></li>
+                <li><a href="##">组织结构</a></li>
+                <li><a href="##">客服服务</a></li>
+            </ul>
+        <div class="btn-group dropup">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">
+                更多
+                <!-- 向上的小三角,在btn-group上增添一个dropup类名 -->
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="##">没有更多</a></li>
+                <li><a href="##">更多什么</a></li>
+                <li><a href="##">什么更多</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏垂直显示的效果,只需要把水平分组的“btn-group”类名换成“btn-group-vertical”即可。 -->
+    <hr>
+    <!-- 等分按钮(自适应分组按钮)
+        在制作等分按钮组时，尽量使用<a>标签元素来制作按钮 -->
+    <div class="btn-wrap">
+        <div class="btn-group btn-group-justified">
+            <a role="button" class="btn btn-default" href="">首页</a>
+            <a role="button" class="btn btn-default" href="">产品展示</a>
+            <a role="button" class="btn btn-default" href="">案例分析</a>
+            <a role="button" class="btn btn-default" href="">联系我们</a>
+        </div>
+    </div>
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
