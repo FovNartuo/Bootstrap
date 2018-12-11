@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>面板</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 基础面板非常简单，就是一个div容器运用了“panel”样式，产生一个具有边框的文本显示块 -->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            我这是一个基础面板，带有默认主题样式风格。<br>
+            窗前明月光<br>
+            疑是地上霜<br>
+            举头望明月<br>
+            低头思故乡
+        </div>
+    </div>
+    <hr>
+
+    <!-- 有头有尾的面板 -->
+    <div class="panel panel-default">
+        <div class="panel-heading">我的头可不是面团捏的，最后一次了，你可得使足了劲。</div>
+        <div class="panel-body">葫芦娃葫芦娃，一根藤上七个花，风吹雨打都不怕。</div>
+        <div class="panel-footer">葫芦小金刚</div>
+    </div>
+    <hr>
+
+    <!-- 彩色面板 -->
+    <div class="panel panel-primary">
+        <div class="panel-heading">真理</div>
+        <div class="panel-body">真理惟一可靠的标准就是永远自相符合。</div>
+        <div class="panel-footer">欧文</div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">真理</div>
+        <div class="panel-body">
+            土地是以它的肥沃和收获而被估价的，才能也是土地，不过它生产的不是粮食，而是真理。如果只能滋生瞑想和幻想的话，即使再大的才能也只是砂地或盐池，那上面连小草也长不出来的。
+        </div>
+        <div class="panel-footer">别林斯基</div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">图书</div>
+        <div class="panel-body">
+            我需要三件东西：爱情友谊和图书。然而这三者之间何其相通！炽热的爱情可以充实图书的内容，图书又是人们最忠实的朋友。
+        </div>
+        <div class="panel-footer">蒙田</div>
+    </div>
+    <div class="panel panel-warning">
+        <div class="panel-heading">生活</div>
+        <div class="panel-body">
+            人生的磨难是很多的，所以我们不可对于每一件轻微的伤害都过于敏感。在生活磨难面前，精神上的坚强和无动于衷是我们抵抗罪恶和人生意外的最好武器。
+        </div>
+        <div class="panel-footer">洛克</div>
+    </div>
+    <div class="panel panel-danger">
+        <div class="panel-heading">爱情</div>
+        <div class="panel-body">
+            爱情只有当它是自由自在时，才会叶茂花繁。认为爱情是某种义务的思想只能置爱情于死地。只消一句话：你应当爱某个人，就足以使你对这个人恨之入骨。
+        </div>
+        <div class="panel-footer">罗素</div>
+    </div>
+
+    <hr>
+
+    <!-- 面板中嵌套表格 -->
+    <div class="panel panel-default">
+        <div class="panel-heading">基础知识掌握程度</div>
+        <div class="panel-body">
+            <p class="h4 text-center">前端知识已经学习了很久了呀,到底都掌握了些什么呢?</p>
+            <div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>技能</td>
+                            <td>掌握进度</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" style="width:50%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CSS3</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" style="width:50%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" style="width:50%;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="panel-footer">
+                    <p>user : Bert</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- 面板中嵌套列表组 -->
+    <div class="panel panel-primary">
+        <div class="panel-heading">基础知识掌握程度</div>
+        <div class="panel-body">
+            <p class="h4 text-center">前端知识已经学习了很久了呀,到底都掌握了些什么呢?</p>
+            <ul class="list-group">
+                <li class="list-group-item">HTML5</li>
+                <li class="list-group-item">CSS3</li>
+                <li class="list-group-item">JavaScript</li>
+            </ul>
+        </div>
+        <div class="panel-footer">user : Bert</div>
+    </div>
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
