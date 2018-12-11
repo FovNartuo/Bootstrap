@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition-modal</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        /* 去除按钮点击之后出现的蓝色边框 */
+        button{outline: none !important;}
+    </style>
+</head>
+<body>
+    <!-- 源文件transition.js
+    以下组件使用了过渡动画效果：
+        模态弹出窗（Modal）的滑动和渐变效果；
+        选项卡（Tab）的渐变效果；
+        警告框（Alert）的渐变效果；
+        图片轮播（Carousel）的滑动效果。 -->
+
+    <!-- “模态弹出框”特点：
+        1、模态弹出窗是固定在浏览器中的。
+        2、单击右侧全屏按钮，在全屏状态下，模态弹出窗宽度是自适应的，而且modal-dialog水平居中。
+        3、当浏览器视窗大于768px时，模态弹出窗的宽度为600px。 -->
+
+    
+    <!-- 通过data-target和data-toggle属性可以省略JS代码直接出发弹框显示 -->
+    <button class="btn btn-primary" type="button" data-target="#myModal" data-toggle="modal">免JS代码直接触发弹框</button>
+    
+    <button class="btn btn-primary" type="button">JS代码触发弹框</button>
+    <!-- Bootstrap框架中的模态弹出框，分别运用了“modal”、“modal-dialog”和“modal-content”样式，而弹出窗真正的内容都放置在“modal-content”中 -->
+    <!-- fade类增加了过渡动画 -->
+    <div class="modal fade" id="myModal">
+        <!-- 两种弹窗尺寸:lg大尺寸,sm:小尺寸 -->
+        <div class="modal-dialog modal-sm">
+            <!-- 弹出的内容 -->
+            <div class="modal-content">
+                <!-- 弹出框头部，一般使用“modal-header”表示，主要包括标题和关闭按钮 -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title">学习打卡</h4>
+                </div>
+                <!-- 弹出框主体，一般使用“modal-body”表示，弹出框的主要内容 -->
+                <div class="modal-body">
+                    <p>您已经学习超过30分钟，可以前往<a href="#">打卡>></a></p>
+                    <p>以下为弹框所实现的蒙层样式</p>
+                    <pre>
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+                    </pre>
+                </div>
+                <!-- 弹出框脚部，一般使用“modal-footer”表示，主要放置操作按钮 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">离开</button>
+                    <button type="button" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $(".btn").click(function(){
+                $("#myModal").modal("toggle");
+            // toggle:触发时，反转模态弹出窗的状态。如果模态弹出窗是显示的，则关闭；反之，如果模态弹出窗是关闭的，则显示
+            // show:触发时，显示模态弹出窗
+            // hide:触发时，关闭模态弹出窗
+            });
+        });
+    </script>
+</body>
+</html>
