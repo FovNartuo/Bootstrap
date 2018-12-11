@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表组</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 列表组可以用来制作列表清单、垂直导航等效果 -->
+    <!-- 基本列表组,就是去掉了列表项目的列表项 -->
+    <ul class="list-group">
+        <li class="list-group-item">HTML5</li>
+        <li class="list-group-item">CSS3</li>
+        <li class="list-group-item">JavaScript</li>
+        <li class="list-group-item">Vue</li>
+        <li class="list-group-item">React</li>
+    </ul>
+    <hr>
+
+    <!-- 带徽章的列表组 -->
+    <ul class="list-group">
+        <li class="list-group-item">
+            <span class="badge">666</span>
+            HTML5
+        </li>
+        <li class="list-group-item">
+            <span class="badge">666</span>
+            CSS3
+        </li>
+        <li class="list-group-item">
+            <span class="badge">666</span>
+            JavaScript
+        </li>
+        <li class="list-group-item">
+            <span class="badge">666</span>
+            Vue
+        </li>
+        <li class="list-group-item">
+            <span class="badge">666</span>
+            React
+        </li>
+    </ul>
+    <hr>
+    <!-- 带链接的列表组,ul li a标签的组合会有只有点击文本才可以跳转的问题  -->
+    <div class="list-group">
+        <a href="#" class="list-group-item">
+            <span class="badge">666</span>
+            HTML5
+        </a>
+        <!-- disabled禁用状态 -->
+        <a href="#" class="list-group-item disabled">
+            <span class="badge">666</span>
+            CSS3
+        </a>
+        <a href="#" class="list-group-item">
+            <span class="badge">666</span>
+            JavaScript
+        </a>
+        <!-- active当前状态 -->
+        <a href="#" class="list-group-item active">
+            <span class="badge">666</span>
+            Vue
+        </a>
+    </div>
+    <hr>
+
+    <!-- 自定义列表组 -->
+    <div class="list-group">
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">HTML5</h4>
+            <p class="list-group-item-text">
+                万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。
+            </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">CSS3</h4>
+            <p class="list-group-item-text">
+                CSS3是CSS（层叠样式表）技术的升级版本，于1999年开始制订，2001年5月23日W3C完成了CSS3的工作草案，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块。
+            </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">JavaScript</h4>
+            <p class="list-group-item-text">
+                JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
+            </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Vue</h4>
+            <p class="list-group-item-text">
+                Vue.js是一个构建数据驱动的 web 界面的渐进式框架。Vue.js 的目标是通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。它不仅易于上手，还便于与第三方库或既有项目整合。
+            </p>
+        </a>
+    </div>
+    <hr>
+
+    <!-- 多彩列表项 -->
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-success">
+            <span class="badge">666</span>
+            HTML5
+        </a>
+        <a href="#" class="list-group-item list-group-item-info">
+            <span class="badge">666</span>
+            CSS3
+        </a>
+        <a href="#" class="list-group-item list-group-item-warning">
+            <span class="badge">666</span>
+            JavaScript
+        </a>
+        <a href="#" class="list-group-item list-group-item-danger">
+            <span class="badge">666</span>
+            Vue
+        </a>
+    </div>
+
+    <script src="jquery-1.10.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
